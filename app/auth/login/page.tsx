@@ -34,7 +34,7 @@ export default function LoginPage() {
       if (error) throw error
 
       // redirect to main domain store account
-      window.location.href = "https://tikiziki.vercel.app/store"
+      window.location.href = "https://tikizikike.vercel.app/store/account"
     } catch (error: unknown) {
       setError(error instanceof Error ? error.message : 'An error occurred')
     } finally {
