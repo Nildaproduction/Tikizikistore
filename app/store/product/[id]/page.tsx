@@ -81,7 +81,7 @@ export default function ProductPage({ params }: ProductPageProps) {
 
   const handleBuyNow = () => {
     addToCart(product, quantity, selectedSize, selectedColor);
-    router.push('/store/cart');
+    router.push('/store/checkout?buynow=1');
   };
 
   const handleWhatsAppShare = () => {
