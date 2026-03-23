@@ -10,11 +10,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$supabase$2b$ssr$40$0$2e$9$2e$0_$40$supabase$2b$supabase$2d$js$40$2$2e$99$2e$2$2f$node_modules$2f40$supabase$2f$ssr$2f$dist$2f$module$2f$createBrowserClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@supabase+ssr@0.9.0_@supabase+supabase-js@2.99.2/node_modules/@supabase/ssr/dist/module/createBrowserClient.js [app-ssr] (ecmascript)");
 ;
 function createClient() {
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-    if (!supabaseUrl || !supabaseAnonKey) {
-        throw new Error('Supabase URL and Anon Key must be set in environment variables');
-    }
+    const supabaseUrl = ("TURBOPACK compile-time value", "https://kyghagvbevveljdgooxw.supabase.co");
+    const supabaseAnonKey = ("TURBOPACK compile-time value", "sb_publishable__DaR6HM0WM--wlbDa2VYoQ_rT-BxBUL");
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
     return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$supabase$2b$ssr$40$0$2e$9$2e$0_$40$supabase$2b$supabase$2d$js$40$2$2e$99$2e$2$2f$node_modules$2f40$supabase$2f$ssr$2f$dist$2f$module$2f$createBrowserClient$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createBrowserClient"])(supabaseUrl, supabaseAnonKey);
 }
 }),

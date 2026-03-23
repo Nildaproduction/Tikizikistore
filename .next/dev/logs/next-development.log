@@ -1,7 +1,7 @@
-[00:00:03.274] Server  LOG     ✓ Ready in 2.7s
-[00:00:08.507] Server  LOG     ○ Compiling / ...
-[00:00:14.964] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.289] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:04.280] Server  LOG     ✓ Ready in 3.7s
+[00:00:08.107] Server  LOG     ○ Compiling / ...
+[00:00:15.343] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.343] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -40,7 +40,7 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="en">
                           <body
                             className="playfair_display_fed1534a-module__F9WnGq__variable poppins_3e157e41-module__euo..."
--                           __processed_a549681b-45a5-4602-b26f-28324b62018e__="true"
+-                           __processed_69af0e83-b8cc-43a5-af45-b1e43db047e0__="true"
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
                           >
                             ...
@@ -329,14 +329,16 @@ It can also happen if the client has a browser extension installed which messes 
                             ...
                   ...
 
-[00:00:15.397] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:15.397] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store","route":"/store"}
-[00:00:15.397] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774232088883} /_vercel/insights/view
-[00:00:22.811] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/6 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/6","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774232096251} /_vercel/insights/view
-[00:00:32.050] Server  LOG     ○ Compiling /store/checkout ...
-[00:00:32.998] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774232106377} /_vercel/insights/view
-[00:07:36.551] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:36.551] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:15.435] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:15.435] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store","route":"/store"}
+[00:00:15.435] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237604797} /_vercel/insights/view
+[00:00:19.498] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237608948} /_vercel/insights/view
+[00:00:22.750] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237612173} /_vercel/insights/view
+[00:00:30.309] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/account color: rgb(120, 120, 120) color: inherit {"dp":"/account","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/account","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237619739} /_vercel/insights/view
+[00:00:35.347] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/cart color: rgb(120, 120, 120) color: inherit {"dp":"/store/cart","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/cart","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237624800} /_vercel/insights/view
+[00:00:37.657] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237627106} /_vercel/insights/view
+[00:01:15.546] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:15.546] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -375,56 +377,82 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="en">
                           <body
                             className="playfair_display_fed1534a-module__F9WnGq__variable poppins_3e157e41-module__euo..."
--                           __processed_9ce71f5c-1240-427e-8008-0cf2be4eded9__="true"
+-                           __processed_0fa50e44-360b-4373-9644-ba776ac2519b__="true"
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
                           >
-                            ...
-                              <SegmentViewNode type="page" pagePath="store/chec...">
-                                <SegmentTrieNode>
-                                <ClientPageRoot Component={function CheckoutPage} serverProvidedParams={{...}}>
-                                  <CheckoutPage params={Promise} searchParams={Promise}>
-                                    <div
-                                      className="min-h-screen bg-background"
--                                     bis_skin_checked="1"
-                                    >
-                                      <StoreHeader>
-                                        <header className="sticky top...">
-                                          <div
-                                            className="container mx-auto px-4"
--                                           bis_skin_checked="1"
-                                          >
-                                            <div
-                                              className="flex items-center justify-between h-16"
--                                             bis_skin_checked="1"
-                                            >
-                                              <LinkComponent>
-                                              <nav>
-                                              <div
-                                                className="flex items-center gap-2"
--                                               bis_skin_checked="1"
-                                              >
-                                      <main className="container ...">
-                                        <div
-                                          className="max-w-md mx-auto"
--                                         bis_skin_checked="1"
-                                        >
-                                          <div
-                                            className="w-20 h-20 rounded-full bg-muted flex items-center justify-cente..."
--                                           bis_skin_checked="1"
-                                          >
-                                          ...
-                            ...
                   ...
 
-[00:07:36.755] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:07:36.755] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
-[00:07:36.755] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774232530272} /_vercel/insights/view
-[00:07:37.466] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774232530972} /_vercel/insights/view
-[00:07:39.461] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774232532968} /_vercel/insights/view
-[00:07:41.063] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774232534578} /_vercel/insights/view
-[00:14:34.573] Server  LOG       Reload env: .env.local
-[00:19:02.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:02.896] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:01:15.799] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="checkout/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/store/che..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="store/chec...">
+                        <SegmentTrieNode>
+                        <CheckoutPage>
+                          <Suspense fallback={<div>}>
+                            <CheckoutContent>
+                              <div
+                                className="min-h-screen bg-background"
+-                               bis_skin_checked="1"
+                              >
+                                <StoreHeader>
+                                  <header className="sticky top...">
+                                    <div
+                                      className="container mx-auto px-4"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <div
+                                        className="flex items-center justify-between h-16"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <LinkComponent>
+                                        <nav>
+                                        <div
+                                          className="flex items-center gap-2"
+-                                         bis_skin_checked="1"
+                                        >
+                                <main className="container ...">
+                                  <div
+                                    className="max-w-md mx-auto"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="w-20 h-20 rounded-full bg-muted flex items-center justify-center mx-a..."
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                      ...
+                    ...
+          ...
+
+[00:01:15.901] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:15.901] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
+[00:01:15.901] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237665362} /_vercel/insights/view
+[00:01:28.065] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237677524} /_vercel/insights/view
+[00:01:30.713] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/2 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/2","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237680155} /_vercel/insights/view
+[00:01:37.614] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237687055} /_vercel/insights/view
+[00:01:42.470] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/5 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/5","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237691925} /_vercel/insights/view
+[00:01:46.710] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237696164} /_vercel/insights/view
+[00:02:35.954] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:35.954] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -463,539 +491,73 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="en">
                           <body
                             className="playfair_display_fed1534a-module__F9WnGq__variable poppins_3e157e41-module__euo..."
--                           __processed_6e8fda6a-1a75-463b-8c7d-1736fc5d6192__="true"
+-                           __processed_48ea130d-1c63-4088-8478-f617c936dccc__="true"
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
                           >
-                            ...
-                              <SegmentViewNode type="page" pagePath="store/chec...">
-                                <SegmentTrieNode>
-                                <ClientPageRoot Component={function CheckoutPage} serverProvidedParams={{...}}>
-                                  <CheckoutPage params={Promise} searchParams={Promise}>
+                  ...
+
+[00:02:36.167] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="checkout/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/store/che..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="store/chec...">
+                        <SegmentTrieNode>
+                        <CheckoutPage>
+                          <Suspense fallback={<div>}>
+                            <CheckoutContent>
+                              <div
+                                className="min-h-screen bg-background"
+-                               bis_skin_checked="1"
+                              >
+                                <StoreHeader>
+                                  <header className="sticky top...">
                                     <div
-                                      className="min-h-screen bg-background"
+                                      className="container mx-auto px-4"
 -                                     bis_skin_checked="1"
                                     >
-                                      <StoreHeader>
-                                        <header className="sticky top...">
-                                          <div
-                                            className="container mx-auto px-4"
--                                           bis_skin_checked="1"
-                                          >
-                                            <div
-                                              className="flex items-center justify-between h-16"
--                                             bis_skin_checked="1"
-                                            >
-                                              <LinkComponent>
-                                              <nav>
-                                              <div
-                                                className="flex items-center gap-2"
--                                               bis_skin_checked="1"
-                                              >
-                                      <main className="container ...">
+                                      <div
+                                        className="flex items-center justify-between h-16"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <LinkComponent>
+                                        <nav>
                                         <div
-                                          className="max-w-md mx-auto"
+                                          className="flex items-center gap-2"
 -                                         bis_skin_checked="1"
                                         >
-                                          <div
-                                            className="w-20 h-20 rounded-full bg-muted flex items-center justify-cente..."
--                                           bis_skin_checked="1"
-                                          >
-                                          ...
-                            ...
-                  ...
-
-[00:19:03.039] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:19:03.039] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
-[00:19:03.039] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233216579} /_vercel/insights/view
-[00:19:04.893] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233218433} /_vercel/insights/view
-[00:19:12.985] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233226496} /_vercel/insights/view
-[00:19:16.047] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233229595} /_vercel/insights/view
-[00:20:16.106] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:16.106] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/store/che..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="playfair_display_fed1534a-module__F9WnGq__variable poppins_3e157e41-module__euo..."
--                           __processed_3c0c05dc-d61a-48aa-8bff-c9ea8f30eea4__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
-                          >
-                  ...
-
-[00:20:16.106] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:20:16.106] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
-[00:20:16.106] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233289528} /_vercel/insights/view
-[00:20:18.337] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233291868} /_vercel/insights/view
-[00:20:21.183] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233294715} /_vercel/insights/view
-[00:20:24.511] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233298049} /_vercel/insights/view
-[00:20:59.230] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Merch color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Merch","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233332769} /_vercel/insights/view
-[00:21:03.706] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233337243} /_vercel/insights/view
-[00:21:12.592] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Merch color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Merch","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233346136} /_vercel/insights/view
-[00:21:19.261] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/6 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/6","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233352805} /_vercel/insights/view
-[00:21:24.251] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/cart color: rgb(120, 120, 120) color: inherit {"dp":"/store/cart","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/cart","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233357789} /_vercel/insights/view
-[00:21:26.638] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233360188} /_vercel/insights/view
-[00:22:27.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:27.551] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/store/che..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-                      <div
-                        hidden={true}
--                       bis_skin_checked="1"
-                      >
+                                <main className="container ...">
+                                  <div
+                                    className="max-w-md mx-auto"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="w-20 h-20 rounded-full bg-muted flex items-center justify-center mx-a..."
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                      ...
                     ...
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="playfair_display_fed1534a-module__F9WnGq__variable poppins_3e157e41-module__euo..."
--                           __processed_389bcb0c-174c-490a-b39f-2fee1de9d737__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
-                          >
-                            ...
-                              <SegmentViewNode type="page" pagePath="store/chec...">
-                                <SegmentTrieNode>
-                                <ClientPageRoot Component={function CheckoutPage} serverProvidedParams={{...}}>
-                                  <CheckoutPage params={Promise} searchParams={Promise}>
-                                    <div
-                                      className="min-h-screen bg-background"
--                                     bis_skin_checked="1"
-                                    >
-                                      <StoreHeader>
-                                        <header className="sticky top...">
-                                          <div
-                                            className="container mx-auto px-4"
--                                           bis_skin_checked="1"
-                                          >
-                                            <div
-                                              className="flex items-center justify-between h-16"
--                                             bis_skin_checked="1"
-                                            >
-                                              <LinkComponent>
-                                              <nav>
-                                              <div
-                                                className="flex items-center gap-2"
--                                               bis_skin_checked="1"
-                                              >
-                                      <main className="container ...">
-                                        <div
-                                          className="max-w-md mx-auto"
--                                         bis_skin_checked="1"
-                                        >
-                                          <div
-                                            className="w-20 h-20 rounded-full bg-muted flex items-center justify-cente..."
--                                           bis_skin_checked="1"
-                                          >
-                                          ...
-                            ...
-                  ...
+          ...
 
-[00:22:27.924] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:22:27.924] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
-[00:22:27.924] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233421480} /_vercel/insights/view
-[00:24:09.580] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233523130} /_vercel/insights/view
-[00:24:16.105] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/6 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/6","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233529629} /_vercel/insights/view
-[00:24:19.991] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233533528} /_vercel/insights/view
-[00:28:31.499] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:31.715] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/store/che..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-                      <div
-                        hidden={true}
--                       bis_skin_checked="1"
-                      >
-                    ...
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="playfair_display_fed1534a-module__F9WnGq__variable poppins_3e157e41-module__euo..."
--                           __processed_55327f88-57cc-4ba2-add4-1984de69ed7b__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
-                          >
-                            ...
-                              <SegmentViewNode type="page" pagePath="store/chec...">
-                                <SegmentTrieNode>
-                                <ClientPageRoot Component={function CheckoutPage} serverProvidedParams={{...}}>
-                                  <CheckoutPage params={Promise} searchParams={Promise}>
-                                    <div
-                                      className="min-h-screen bg-background"
--                                     bis_skin_checked="1"
-                                    >
-                                      <StoreHeader>
-                                        <header className="sticky top...">
-                                          <div
-                                            className="container mx-auto px-4"
--                                           bis_skin_checked="1"
-                                          >
-                                            <div
-                                              className="flex items-center justify-between h-16"
--                                             bis_skin_checked="1"
-                                            >
-                                              <LinkComponent>
-                                              <nav>
-                                              <div
-                                                className="flex items-center gap-2"
--                                               bis_skin_checked="1"
-                                              >
-                                      <main className="container ...">
-                                        <div
-                                          className="max-w-md mx-auto"
--                                         bis_skin_checked="1"
-                                        >
-                                          <div
-                                            className="w-20 h-20 rounded-full bg-muted flex items-center justify-cente..."
--                                           bis_skin_checked="1"
-                                          >
-                                          ...
-                            ...
-                  ...
-
-[00:28:31.869] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:28:31.869] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
-[00:28:31.869] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233785441} /_vercel/insights/view
-[00:28:35.078] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233788645} /_vercel/insights/view
-[00:28:38.321] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233791876} /_vercel/insights/view
-[00:28:40.118] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774233793690} /_vercel/insights/view
-[00:31:38.293] Server  LOG     ✓ Compiled in 94ms
-[00:32:09.170] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:32:09.170] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/store/che..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-                      <div
-                        hidden={true}
--                       bis_skin_checked="1"
-                      >
-                    ...
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="playfair_display_fed1534a-module__F9WnGq__variable poppins_3e157e41-module__euo..."
--                           __processed_672a1193-63a2-445f-bb43-f50caa133eb4__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
-                          >
-                            ...
-                              <SegmentViewNode type="page" pagePath="store/chec...">
-                                <SegmentTrieNode>
-                                <ClientPageRoot Component={function CheckoutPage} serverProvidedParams={{...}}>
-                                  <CheckoutPage params={Promise} searchParams={Promise}>
-                                    <div
-                                      className="min-h-screen bg-background"
--                                     bis_skin_checked="1"
-                                    >
-                                      <StoreHeader>
-                                        <header className="sticky top...">
-                                          <div
-                                            className="container mx-auto px-4"
--                                           bis_skin_checked="1"
-                                          >
-                                            <div
-                                              className="flex items-center justify-between h-16"
--                                             bis_skin_checked="1"
-                                            >
-                                              <LinkComponent>
-                                              <nav>
-                                              <div
-                                                className="flex items-center gap-2"
--                                               bis_skin_checked="1"
-                                              >
-                                      <main className="container ...">
-                                        <div
-                                          className="max-w-md mx-auto"
--                                         bis_skin_checked="1"
-                                        >
-                                          <div
-                                            className="w-20 h-20 rounded-full bg-muted flex items-center justify-cente..."
--                                           bis_skin_checked="1"
-                                          >
-                                          ...
-                            ...
-                  ...
-
-[00:32:09.170] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:32:09.170] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
-[00:32:09.170] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234002824} /_vercel/insights/view
-[00:32:14.633] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234008206} /_vercel/insights/view
-[00:32:17.604] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234011180} /_vercel/insights/view
-[00:32:19.487] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234013057} /_vercel/insights/view
-[00:32:47.612] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:32:47.612] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/store/che..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-                      <div
-                        hidden={true}
--                       bis_skin_checked="1"
-                      >
-                    ...
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="playfair_display_fed1534a-module__F9WnGq__variable poppins_3e157e41-module__euo..."
--                           __processed_026a6a44-1bbf-44fc-b6d0-f14e5dba723c__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
-                          >
-                            ...
-                              <SegmentViewNode type="page" pagePath="store/chec...">
-                                <SegmentTrieNode>
-                                <ClientPageRoot Component={function CheckoutPage} serverProvidedParams={{...}}>
-                                  <CheckoutPage params={Promise} searchParams={Promise}>
-                                    <div
-                                      className="min-h-screen bg-background"
--                                     bis_skin_checked="1"
-                                    >
-                                      <StoreHeader>
-                                        <header className="sticky top...">
-                                          <div
-                                            className="container mx-auto px-4"
--                                           bis_skin_checked="1"
-                                          >
-                                            <div
-                                              className="flex items-center justify-between h-16"
--                                             bis_skin_checked="1"
-                                            >
-                                              <LinkComponent>
-                                              <nav>
-                                              <div
-                                                className="flex items-center gap-2"
--                                               bis_skin_checked="1"
-                                              >
-                                      <main className="container ...">
-                                        <div
-                                          className="max-w-md mx-auto"
--                                         bis_skin_checked="1"
-                                        >
-                                          <div
-                                            className="w-20 h-20 rounded-full bg-muted flex items-center justify-cente..."
--                                           bis_skin_checked="1"
-                                          >
-                                          ...
-                            ...
-                  ...
-
-[00:32:47.612] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:32:47.612] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
-[00:32:47.612] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234041271} /_vercel/insights/view
-[00:32:52.013] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store?category=Music","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234045569} /_vercel/insights/view
-[00:32:54.430] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3 color: rgb(120, 120, 120) color: inherit {"dp":"/store/product/[id]","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/product/3","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234047975} /_vercel/insights/view
-[00:32:56.291] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234049874} /_vercel/insights/view
-[00:33:59.059] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:59.059] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/store/che..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
-                    <__next_viewport_boundary__>
-                    <MetadataWrapper>
-                      <div
-                        hidden={true}
--                       bis_skin_checked="1"
-                      >
-                    ...
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="playfair_display_fed1534a-module__F9WnGq__variable poppins_3e157e41-module__euo..."
--                           __processed_03de8c4d-4e35-47a5-9fd8-8cc7ae1bd0a8__="true"
--                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
-                          >
-                            ...
-                              <SegmentViewNode type="page" pagePath="store/chec...">
-                                <SegmentTrieNode>
-                                <ClientPageRoot Component={function CheckoutPage} serverProvidedParams={{...}}>
-                                  <CheckoutPage params={Promise} searchParams={Promise}>
-                                    <div
-                                      className="min-h-screen bg-background"
--                                     bis_skin_checked="1"
-                                    >
-                                      <StoreHeader>
-                                        <header className="sticky top...">
-                                          <div
-                                            className="container mx-auto px-4"
--                                           bis_skin_checked="1"
-                                          >
-                                            <div
-                                              className="flex items-center justify-between h-16"
--                                             bis_skin_checked="1"
-                                            >
-                                              <LinkComponent>
-                                              <nav>
-                                              <div
-                                                className="flex items-center gap-2"
--                                               bis_skin_checked="1"
-                                              >
-                                      <main className="container ...">
-                                        <div
-                                          className="max-w-md mx-auto"
--                                         bis_skin_checked="1"
-                                        >
-                                          <div
-                                            className="w-20 h-20 rounded-full bg-muted flex items-center justify-cente..."
--                                           bis_skin_checked="1"
-                                          >
-                                          ...
-                            ...
-                  ...
-
-[00:33:59.238] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:33:59.238] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
-[00:33:59.238] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234112823} /_vercel/insights/view
-[00:35:29.212] Server  LOG       Reload env: .env.local
-[00:35:48.944] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234222524} /_vercel/insights/view
-[00:35:51.058] Browser ERROR   unhandledRejection: Error: Supabase URL and Anon Key must be set in environment variables
-[00:35:55.235] Browser ERROR   unhandledRejection: Error: Supabase URL and Anon Key must be set in environment variables
-[00:35:58.230] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/auth/sign-up color: rgb(120, 120, 120) color: inherit {"dp":"/auth/sign-up","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/auth/sign-up","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774234231821} /_vercel/insights/view
-[00:36:25.878] Browser ERROR   unhandledRejection: Error: Supabase URL and Anon Key must be set in environment variables
+[00:02:36.291] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:36.291] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/store/checkout","route":"/store/checkout"}
+[00:02:36.291] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1 color: rgb(120, 120, 120) color: inherit {"dp":"/store/checkout","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store/checkout?buynow=1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237745754} /_vercel/insights/view
+[00:05:15.191] Browser LOG     %c[Vercel Web Analytics]%c [view] https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store color: rgb(120, 120, 120) color: inherit {"dp":"/store","o":"https://jubilant-space-fiesta-v6xg7gpr7796h7p4-3000.app.github.dev/store","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1774237904633} /_vercel/insights/view
