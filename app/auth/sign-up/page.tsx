@@ -44,7 +44,7 @@ export default function SignUpPage() {
         email,
         password,
         options: {
-          emailRedirectTo: "https://tikiziki.vercel.app/store/account",
+          emailRedirectTo: "https://tikiziki.vercel.app/store",
         },
       })
       if (error) throw error
