@@ -32,7 +32,7 @@ export default function StorePage() {
         {/* Hero Section */}
         <div className="mb-12 text-center">
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
-            TIKIZIKI Store
+            TIKI ZIKI Store
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Discover exclusive music tracks and premium merchandise from Tiki Ziki
@@ -79,9 +79,9 @@ export default function StorePage() {
       <footer className="border-t border-border mt-16">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-sm text-muted-foreground">
-            <p className="font-serif text-lg font-semibold text-foreground mb-2">TIKIZIKI</p>
+            <p className="font-serif text-lg font-semibold text-foreground mb-2">TIKI ZIKI</p>
             <p>Official Music & Merchandise Store</p>
-            <p className="mt-4">Payment integration coming soon</p>
+            <p className="mt-4"Payments powered by Paystack</p>
           </div>
         </div>
       </footer>
