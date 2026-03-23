@@ -12,7 +12,6 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
 export default function LoginPage() {
@@ -20,7 +19,6 @@ export default function LoginPage() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
-  const router = useRouter()
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -34,7 +32,9 @@ export default function LoginPage() {
         password,
       })
       if (error) throw error
-      router.push('/account')
+
+      // redirect to main domain store account
+      window.location.href = "https://tikiziki.vercel.app/store/account"
     } catch (error: unknown) {
       setError(error instanceof Error ? error.message : 'An error occurred')
     } finally {
@@ -51,6 +51,7 @@ export default function LoginPage() {
               <h1 className="font-serif text-3xl font-bold tracking-tight">TIKIZIKI</h1>
             </Link>
           </div>
+
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl font-serif">Login</CardTitle>
@@ -58,6 +59,7 @@ export default function LoginPage() {
                 Enter your email below to login to your account
               </CardDescription>
             </CardHeader>
+
             <CardContent>
               <form onSubmit={handleLogin}>
                 <div className="flex flex-col gap-6">
@@ -72,6 +74,7 @@ export default function LoginPage() {
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
+
                   <div className="grid gap-2">
                     <Label htmlFor="password">Password</Label>
                     <Input
@@ -82,20 +85,24 @@ export default function LoginPage() {
                       onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
+
                   {error && <p className="text-sm text-red-500">{error}</p>}
+
                   <Button type="submit" className="w-full" disabled={isLoading}>
                     {isLoading ? 'Logging in...' : 'Login'}
                   </Button>
                 </div>
+
                 <div className="mt-4 text-center text-sm">
                   {"Don't have an account? "}
                   <Link
-                    href="/auth/sign-up"
+                    href="/store/auth/sign-up"
                     className="underline underline-offset-4"
                   >
                     Sign up
                   </Link>
                 </div>
+
                 <div className="mt-2 text-center text-sm">
                   <Link
                     href="/store"
