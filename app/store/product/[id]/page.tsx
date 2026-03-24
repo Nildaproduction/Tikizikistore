@@ -66,7 +66,6 @@ export default function ProductPage({ params }: ProductPageProps) {
   }
 
   const storeBaseUrl = 'https://tikizikike.vercel.app/store';
-  const productUrl = `${storeBaseUrl}?product=${id}`;
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-KE', {
@@ -89,23 +88,31 @@ export default function ProductPage({ params }: ProductPageProps) {
 
   const handleWhatsAppShare = () => {
     const message = encodeURIComponent(
-      `Check out ${product.name} at TIKIZIKI Store for ${formatPrice(product.price)}! View it here: ${productUrl}`
+      `Check out TIKIZIKI Store! View it here: ${storeBaseUrl}`
     );
     window.open(`https://wa.me/?text=${message}`, '_blank');
   };
 
   const handleShare = async () => {
-    const message = `Check out ${product.name} at TIKIZIKI Store! View it here: ${productUrl}`;
+    const message = `Check out TIKIZIKI Store! View it here: ${storeBaseUrl}`;
 
     if (navigator.share) {
-      await navigator.share({
-        title: product.name,
-        text: message,
-        url: productUrl,
-      });
+      try {
+        await navigator.share({
+          title: 'TIKIZIKI Store',
+          text: message,
+          url: storeBaseUrl,
+        });
+      } catch (err) {
+        console.error('Error sharing:', err);
+      }
     } else {
-      await navigator.clipboard.writeText(productUrl);
-      alert('Link copied to clipboard!');
+      try {
+        await navigator.clipboard.writeText(storeBaseUrl);
+        alert('Store link copied to clipboard!');
+      } catch {
+        alert('Unable to copy. Please manually share this link: ' + storeBaseUrl);
+      }
     }
   };
 
