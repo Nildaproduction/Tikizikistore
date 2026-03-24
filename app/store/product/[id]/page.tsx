@@ -65,7 +65,7 @@ export default function ProductPage({ params }: ProductPageProps) {
     );
   }
 
-  const storeBaseUrl = 'https://tikizikike.vercel.app/store';
+  const storeBaseUrl = 'https://tikiziki.vercel.app/store';
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-KE', {
