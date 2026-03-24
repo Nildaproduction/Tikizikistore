@@ -65,6 +65,9 @@ export default function ProductPage({ params }: ProductPageProps) {
     );
   }
 
+  const storeBaseUrl = 'https://tikizikike.vercel.app/store';
+  const productUrl = `${storeBaseUrl}?product=${id}`;
+
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-KE', {
       style: 'currency',
@@ -85,7 +88,6 @@ export default function ProductPage({ params }: ProductPageProps) {
   };
 
   const handleWhatsAppShare = () => {
-    const productUrl = encodeURIComponent(window.location.href);
     const message = encodeURIComponent(
       `Check out ${product.name} at TIKIZIKI Store for ${formatPrice(product.price)}! View it here: ${productUrl}`
     );
@@ -93,18 +95,8 @@ export default function ProductPage({ params }: ProductPageProps) {
   };
 
   const handleShare = async () => {
-    const productUrl = window.location.href;
     const message = `Check out ${product.name} at TIKIZIKI Store! View it here: ${productUrl}`;
 
-    // Detect mobile devices and open WhatsApp directly
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (isMobile) {
-      const waUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
-      window.open(waUrl, '_blank');
-      return;
-    }
-
-    // Use Web Share API if available
     if (navigator.share) {
       await navigator.share({
         title: product.name,
@@ -112,7 +104,6 @@ export default function ProductPage({ params }: ProductPageProps) {
         url: productUrl,
       });
     } else {
-      // Fallback: copy link to clipboard
       await navigator.clipboard.writeText(productUrl);
       alert('Link copied to clipboard!');
     }
