@@ -24,7 +24,7 @@ export default function StorePage() {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -126,7 +126,7 @@ export default function StorePage() {
 
             <div className="mt-6">
               <p className="text-foreground">
-                <span className="font-bold">Secured</span> by Paystack
+                <span className="font-bold">Secured</span> by <img src="/images/Paystack.png" alt="Paystack" className="h-6" />
               </p>
 
               <p className="mt-3 text-sm">Accepted payment methods</p>
@@ -134,8 +134,8 @@ export default function StorePage() {
               <div className="flex justify-center items-center gap-4 mt-3 flex-wrap">
                 <img src="/images/mpesa.png" alt="M-Pesa" className="h-6" />
                 <img src="images/visa.png" alt="Visa" className="h-6" />
-                <img src="/images/mastercard.png" alt="Mastercard" className="h-6" />
-                <img src="/images/googlepay.png" alt="Google Pay" className="h-6" />
+                <img src="/images/Mastercard.png" alt="Mastercard" className="h-6" />
+                <img src="/images/Google pay.png" alt="Google Pay" className="h-6" />
               </div>
             </div>
 
