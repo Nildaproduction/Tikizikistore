@@ -132,10 +132,10 @@ export default function StorePage() {
               <p className="mt-3 text-sm">Accepted payment methods</p>
 
               <div className="flex justify-center items-center gap-4 mt-3 flex-wrap">
-                <img src="/icons/mpesa.png" alt="M-Pesa" className="h-6" />
-                <img src="/icons/visa.png" alt="Visa" className="h-6" />
-                <img src="/icons/mastercard.png" alt="Mastercard" className="h-6" />
-                <img src="/icons/googlepay.png" alt="Google Pay" className="h-6" />
+                <img src="/images/mpesa.png" alt="M-Pesa" className="h-6" />
+                <img src="images/visa.png" alt="Visa" className="h-6" />
+                <img src="/images/mastercard.png" alt="Mastercard" className="h-6" />
+                <img src="/images/googlepay.png" alt="Google Pay" className="h-6" />
               </div>
             </div>
 
