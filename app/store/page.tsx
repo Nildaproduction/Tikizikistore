@@ -24,7 +24,7 @@ export default function StorePage() {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
