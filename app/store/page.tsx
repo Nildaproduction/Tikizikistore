@@ -42,8 +42,6 @@ export default function StorePage() {
           <p className="text-white/80 text-xs sm:text-sm md:text-lg">
             Exclusive from Tiki ziki 
           </p>
-        </div>
-    
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content */}
