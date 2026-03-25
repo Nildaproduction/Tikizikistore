@@ -128,8 +128,7 @@ export default function StorePage() {
   <span className="font-bold">Secured</span>
   <span>by</span>
   <img src="/images/Paystack.png" alt="Paystack" className="h-6" />
-
-        </p>
+</div>
 
               <p className="mt-3 text-sm">Accepted payment methods</p>
 
