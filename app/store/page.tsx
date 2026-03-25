@@ -1,4 +1,4 @@
-use client';
+'use client';
 
 import { useState, useMemo, useEffect } from 'react';
 import Image from 'next/image';
@@ -24,7 +24,7 @@ export default function StorePage() {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -124,17 +124,17 @@ export default function StorePage() {
             </p>
             <p>Official Music & Merchandise Store</p>
 
-          <div className="flex items-center justify-center gap-2">
-  <span className="font-bold">Secured</span>
-  <span>by</span>
-  <img src="/images/Paystack.png" alt="Paystack" className="h-6" />
-</div>
+            <div className="mt-6">
+              <p className="text-foreground">
+                <span className="font-bold">Secured</span> by Paystack
+              </p>
 
               <p className="mt-3 text-sm">Accepted payment methods</p>
 
               <div className="flex justify-center items-center gap-4 mt-3 flex-wrap">
                 <img src="/images/mpesa.png" alt="M-Pesa" className="h-6" />
-                <img src="images/visa.png" alt="Visa" className="h-6" />
+                 <img src="/images/airtel.png" alt="Airtel" className="h-6" />
+                <img src="/images/visa.png" alt="Visa" className="h-6" />
                 <img src="/images/Mastercard.png" alt="Mastercard" className="h-6" />
                 <img src="/images/Google pay.png" alt="Google Pay" className="h-6" />
               </div>
