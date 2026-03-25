@@ -14,35 +14,64 @@ type Category = 'all' | 'Music' | 'Merch';
 export default function StorePage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<Category>('all');
-{/* SLIDESHOW HERO */}
-<div className="mb-12">
-  <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] overflow-hidden rounded-xl">
 
-    {slides.map((product, index) => (
-      <div
-        key={product.id}
-        className={`absolute inset-0 transition-opacity duration-700 ${
-          index === currentSlide ? 'opacity-100' : 'opacity-0'
-        }`}
-      >
-        <Image
-          src={product.image}
-          alt={product.name}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
-          className="object-cover"
-          priority={index === 0}
-        />
+  // SLIDESHOW STATE
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = products.slice(0, 5);
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="font-serif text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2">
-            {product.name}
-          </h1>
-          <p className="text-white/80 text-xs sm:text-sm md:text-lg">
-            Exclusive from Tiki ziki 
-          </p>
+  useEffect(() => {
+    if (slides.length === 0) return;
 
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  const filteredProducts = useMemo(() => {
+    let result = searchQuery ? searchProducts(searchQuery) : products;
+    
+    if (selectedCategory !== 'all') {
+      result = result.filter(product => product.category === selectedCategory);
+    }
+    
+    return result;
+  }, [searchQuery, selectedCategory]);
+
+  return (
+    <div className="min-h-screen bg-background">
+      <StoreHeader />
+      
+      <main className="container mx-auto px-4 py-8">
+
+        {/* SLIDESHOW HERO */}
+        <div className="mb-12">
+          <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden rounded-xl">
+            
+            {slides.map((product, index) => (
+              <div
+                key={product.id}
+                className={`absolute inset-0 transition-opacity duration-700 ${
+                  index === currentSlide ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                  priority={index === 0}
+                />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
+                  <h1 className="font-serif text-3xl md:text-5xl font-bold text-white mb-2">
+                    {product.name}
+                  </h1>
+                  <p className="text-white/80 text-sm md:text-lg">
+                    Exclusive from TIKI ZIKI
+                  </p>
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content */}
           <div className="flex-1">
