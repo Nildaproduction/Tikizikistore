@@ -43,8 +43,7 @@ export default function StorePage() {
             Exclusive from Tiki ziki 
           </p>
         </div>
-      </div>
-    ))}
+    
 
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content */}
