@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import Image from 'next/image';
 import { products, searchProducts } from '@/data/products';
 import { StoreHeader } from '@/components/store/store-header';
 import { ProductGrid } from '@/components/store/product-grid';
@@ -13,6 +14,20 @@ type Category = 'all' | 'Music' | 'Merch';
 export default function StorePage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<Category>('all');
+
+  // SLIDESHOW STATE
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = products.slice(0, 5);
+
+  useEffect(() => {
+    if (slides.length === 0) return;
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   const filteredProducts = useMemo(() => {
     let result = searchQuery ? searchProducts(searchQuery) : products;
@@ -29,14 +44,39 @@ export default function StorePage() {
       <StoreHeader />
       
       <main className="container mx-auto px-4 py-8">
-        {/* Hero Section */}
-        <div className="mb-12 text-center">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
-            TIKI ZIKI Store
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Discover exclusive music tracks and premium merchandise from Tiki Ziki
-          </p>
+
+        {/* SLIDESHOW HERO */}
+        <div className="mb-12">
+          <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden rounded-xl">
+            
+            {slides.map((product, index) => (
+              <div
+                key={product.id}
+                className={`absolute inset-0 transition-opacity duration-700 ${
+                  index === currentSlide ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                  priority={index === 0}
+                />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
+                  <h1 className="font-serif text-3xl md:text-5xl font-bold text-white mb-2">
+                    {product.name}
+                  </h1>
+                  <p className="text-white/80 text-sm md:text-lg">
+                    Exclusive from TIKI ZIKI
+                  </p>
+                </div>
+              </div>
+            ))}
+
+          </div>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
@@ -79,9 +119,26 @@ export default function StorePage() {
       <footer className="border-t border-border mt-16">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-sm text-muted-foreground">
-            <p className="font-serif text-lg font-semibold text-foreground mb-2">TIKI ZIKI</p>
+            <p className="font-serif text-lg font-semibold text-foreground mb-2">
+              TIKI ZIKI
+            </p>
             <p>Official Music & Merchandise Store</p>
-            <p className="mt-4">Payments powered by Paystack</p>
+
+            <div className="mt-6">
+              <p className="text-foreground">
+                <span className="font-bold">Secured</span> by Paystack
+              </p>
+
+              <p className="mt-3 text-sm">Accepted payment methods</p>
+
+              <div className="flex justify-center items-center gap-4 mt-3 flex-wrap">
+                <img src="/icons/mpesa.png" alt="M-Pesa" className="h-6" />
+                <img src="/icons/visa.png" alt="Visa" className="h-6" />
+                <img src="/icons/mastercard.png" alt="Mastercard" className="h-6" />
+                <img src="/icons/googlepay.png" alt="Google Pay" className="h-6" />
+              </div>
+            </div>
+
           </div>
         </div>
       </footer>
