@@ -1,4 +1,4 @@
-'use client';
+use client';
 
 import { useState, useMemo, useEffect } from 'react';
 import Image from 'next/image';
@@ -24,7 +24,7 @@ export default function StorePage() {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -72,6 +72,13 @@ export default function StorePage() {
                   <p className="text-white/80 text-sm md:text-lg">
                     Exclusive from TIKI ZIKI
                   </p>
+                </div>
+              </div>
+            ))}
+
+          </div>
+        </div>
+
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content */}
           <div className="flex-1">
