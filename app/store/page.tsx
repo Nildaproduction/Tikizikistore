@@ -46,15 +46,6 @@ export default function StorePage() {
       </div>
     ))}
 
-  </div>
-</div>
-                </div>
-              </div>
-            ))}
-
-          </div>
-        </div>
-
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content */}
           <div className="flex-1">
