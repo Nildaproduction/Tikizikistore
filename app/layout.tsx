@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
-import { Archivo_Black } from 'next/font/google'
+import { Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CartProvider } from '@/context/cart-context'
 import './globals.css'
 
-// Single bold, unique font for the store
-const archivoBlack = Archivo_Black({
+// Fancy, elegant font for the entire store
+const playfair = Playfair_Display({
   subsets: ['latin'],
-  variable: '--font-archivo',
+  weight: ['400','500','600','700'],
+  variable: '--font-playfair',
   display: 'swap',
 })
 
@@ -30,7 +31,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${archivoBlack.variable} font-sans antialiased`}>
+      <body className={`${playfair.variable} font-serif antialiased`}>
         <CartProvider>
           {children}
         </CartProvider>
