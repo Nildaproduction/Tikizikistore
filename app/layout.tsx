@@ -1,14 +1,13 @@
 import type { Metadata } from 'next'
-import { Oswald } from 'next/font/google'
+import { Archivo_Black } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CartProvider } from '@/context/cart-context'
 import './globals.css'
 
-// Single unique font for the whole store
-const oswald = Oswald({
+// Single bold, unique font for the store
+const archivoBlack = Archivo_Black({
   subsets: ['latin'],
-  weight: ['400','500','600','700'],
-  variable: '--font-oswald',
+  variable: '--font-archivo',
   display: 'swap',
 })
 
@@ -31,7 +30,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} font-sans antialiased`}>
+      <body className={`${archivoBlack.variable} font-sans antialiased`}>
         <CartProvider>
           {children}
         </CartProvider>
