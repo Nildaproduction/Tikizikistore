@@ -38,49 +38,62 @@ export function StoreHeader() {
         Free shipping on orders over KES 5,000 · New drops every Friday
       </div>
 
+      {/* ── GLASSMORPHISM HEADER ─────────────────────────── */}
       <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${
+        className={`sticky top-0 z-50 transition-all duration-500 border-b ${
           scrolled
-            ? 'bg-background/98 backdrop-blur shadow-sm'
-            : 'bg-background'
-        } border-b border-border`}
+            ? 'shadow-xl border-white/20 dark:border-white/10'
+            : 'border-white/10'
+        }`}
+        style={{
+          background: scrolled
+            ? 'rgba(255,255,255,0.12)'
+            : 'rgba(255,255,255,0.06)',
+          backdropFilter: 'blur(24px) saturate(160%)',
+          WebkitBackdropFilter: 'blur(24px) saturate(160%)',
+        }}
       >
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-20 lg:h-24">
 
             {/* Left — nav (desktop) */}
             <nav className="hidden lg:flex items-center gap-8 flex-1">
-              <Link
-                href="/store"
-                className="text-xs tracking-[0.15em] uppercase font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                New Drops
-              </Link>
-              <Link
-                href="/store?category=Music"
-                className="text-xs tracking-[0.15em] uppercase font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Music
-              </Link>
-              <Link
-                href="/store?category=Merch"
-                className="text-xs tracking-[0.15em] uppercase font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Merch
-              </Link>
+              {[
+                { href: '/store', label: 'New Drops' },
+                { href: '/store?category=Music', label: 'Music' },
+                { href: '/store?category=Merch', label: 'Merch' },
+              ].map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="text-xs tracking-[0.15em] uppercase font-semibold text-foreground/70 hover:text-foreground transition-colors relative group"
+                >
+                  {label}
+                  {/* underline slide-in */}
+                  <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-foreground group-hover:w-full transition-all duration-300" />
+                </Link>
+              ))}
             </nav>
 
-            {/* Centre — Model image logo */}
+            {/* Centre — Model image (BIGGER + animated) */}
             <Link
               href="/store"
-              className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:flex-1 lg:flex lg:justify-center"
+              className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:flex-1 lg:flex lg:justify-center group"
             >
-              <div className="relative h-12 lg:h-14 w-32 lg:w-40">
+              <div
+                className="relative w-40 lg:w-56 xl:w-64"
+                style={{ height: '72px' }}
+              >
                 <Image
                   src="/images/Tiki ziki Model.png"
                   alt="TIKIZIKI"
                   fill
-                  className="object-contain object-center"
+                  className={`
+                    object-contain object-center
+                    transition-all duration-500 ease-out
+                    group-hover:scale-110 group-hover:brightness-110
+                    drop-shadow-[0_4px_16px_rgba(0,0,0,0.35)]
+                  `}
                   priority
                 />
               </div>
@@ -88,22 +101,25 @@ export function StoreHeader() {
 
             {/* Right — actions */}
             <div className="flex items-center gap-1 lg:gap-3 flex-1 justify-end">
-              {/* Search — desktop only placeholder */}
-              <button className="hidden lg:flex p-2 hover:bg-muted rounded-sm transition-colors">
+              {/* Search */}
+              <button className="hidden lg:flex p-2 rounded-sm hover:bg-white/10 transition-colors">
                 <Search className="h-4 w-4" />
                 <span className="sr-only">Search</span>
               </button>
 
               {/* Account */}
               {user ? (
-                <Link href="/account" className="hidden lg:flex p-2 hover:bg-muted rounded-sm transition-colors">
+                <Link
+                  href="/account"
+                  className="hidden lg:flex p-2 rounded-sm hover:bg-white/10 transition-colors"
+                >
                   <User className="h-4 w-4" />
                   <span className="sr-only">Account</span>
                 </Link>
               ) : (
                 <Link
                   href="/auth/login"
-                  className="hidden lg:block text-xs tracking-[0.1em] uppercase font-medium px-4 py-2 hover:bg-muted rounded-sm transition-colors"
+                  className="hidden lg:block text-xs tracking-[0.1em] uppercase font-semibold px-4 py-2 rounded-sm hover:bg-white/10 transition-colors"
                 >
                   Login
                 </Link>
@@ -112,7 +128,7 @@ export function StoreHeader() {
               {/* Cart */}
               <Link
                 href="/store/cart"
-                className="relative flex items-center gap-2 p-2 hover:bg-muted rounded-sm transition-colors"
+                className="relative flex items-center gap-2 p-2 rounded-sm hover:bg-white/10 transition-colors"
               >
                 <ShoppingBag className="h-4 w-4" />
                 {cartCount > 0 && (
@@ -120,15 +136,15 @@ export function StoreHeader() {
                     {cartCount}
                   </span>
                 )}
-                <span className="hidden lg:block text-xs tracking-[0.1em] uppercase font-medium">
-                  Bag {cartCount > 0 && `(${cartCount})`}
+                <span className="hidden lg:block text-xs tracking-[0.1em] uppercase font-semibold">
+                  Bag{cartCount > 0 ? ` (${cartCount})` : ''}
                 </span>
                 <span className="sr-only">Cart</span>
               </Link>
 
               {/* Mobile hamburger */}
               <button
-                className="lg:hidden p-2 hover:bg-muted rounded-sm transition-colors"
+                className="lg:hidden p-2 rounded-sm hover:bg-white/10 transition-colors"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
                 {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -137,9 +153,16 @@ export function StoreHeader() {
           </div>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile menu — also glass */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-border bg-background">
+          <div
+            className="lg:hidden border-t border-white/10"
+            style={{
+              background: 'rgba(255,255,255,0.08)',
+              backdropFilter: 'blur(24px)',
+              WebkitBackdropFilter: 'blur(24px)',
+            }}
+          >
             <nav className="max-w-[1400px] mx-auto px-6 py-6 flex flex-col gap-6">
               {[
                 { href: '/store', label: 'New Drops' },
@@ -155,12 +178,12 @@ export function StoreHeader() {
                   {label}
                 </Link>
               ))}
-              <div className="border-t border-border pt-6">
+              <div className="border-t border-white/10 pt-6">
                 {user ? (
                   <Link
                     href="/account"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-sm tracking-[0.1em] uppercase font-medium flex items-center gap-2"
+                    className="text-sm tracking-[0.1em] uppercase font-semibold flex items-center gap-2"
                   >
                     <User className="h-4 w-4" /> My Account
                   </Link>
@@ -168,7 +191,7 @@ export function StoreHeader() {
                   <Link
                     href="/auth/login"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-sm tracking-[0.1em] uppercase font-medium"
+                    className="text-sm tracking-[0.1em] uppercase font-semibold"
                   >
                     Login / Sign Up
                   </Link>
