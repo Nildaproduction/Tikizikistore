@@ -1,176 +1,80 @@
 'use client';
 
 import Link from 'next/link';
-import { ShoppingBag, Search, User, Menu, X } from 'lucide-react';
-import { useState, useEffect } from 'react';
-import { useCart } from '@/context/cart-context';
-import { createClient } from '@/lib/supabase/client';
-import type { User as SupabaseUser } from '@supabase/supabase-js';
+import Image from 'next/image';
+import { Music, ShoppingBag } from 'lucide-react';
+import { Product } from '@/types/product';
 
-export function StoreHeader() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [user, setUser] = useState<SupabaseUser | null>(null);
-  const { getCartCount } = useCart();
-  const cartCount = getCartCount();
+interface ProductCardProps {
+  product: Product;
+}
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) return;
-    const supabase = createClient();
-    supabase.auth.getUser().then(({ data: { user } }) => setUser(user));
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, session) => {
-      setUser(session?.user ?? null);
-    });
-    return () => subscription.unsubscribe();
-  }, []);
+export function ProductCard({ product }: ProductCardProps) {
+  const formatPrice = (price: number) =>
+    new Intl.NumberFormat('en-KE', {
+      style: 'currency',
+      currency: 'KES',
+      minimumFractionDigits: 0,
+    }).format(price);
 
   return (
-    <>
-      {/* Announcement bar */}
-      <div className="bg-foreground text-background text-center py-2 text-xs tracking-[0.2em] uppercase font-medium">
-        Free shipping on orders over KES 5,000 · New drops every Friday
-      </div>
+    <Link href={`/store/product/${product.id}`} className="group block">
+      {/* Image container — tall portrait ratio like Represent */}
+      <div className="relative aspect-[3/4] overflow-hidden bg-muted mb-3">
+        <Image
+          src={product.image}
+          alt={product.name}
+          fill
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+        />
 
-      <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? 'bg-background/98 backdrop-blur shadow-sm'
-            : 'bg-background'
-        } border-b border-border`}
-      >
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="flex items-center justify-between h-16 lg:h-20">
-
-            {/* Left — nav (desktop) */}
-            <nav className="hidden lg:flex items-center gap-8 flex-1">
-              <Link
-                href="/store"
-                className="text-xs tracking-[0.15em] uppercase font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                New Drops
-              </Link>
-              <Link
-                href="/store?category=Music"
-                className="text-xs tracking-[0.15em] uppercase font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Music
-              </Link>
-              <Link
-                href="/store?category=Merch"
-                className="text-xs tracking-[0.15em] uppercase font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Merch
-              </Link>
-            </nav>
-
-            {/* Centre — wordmark */}
-            <Link
-              href="/store"
-              className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:flex-1 lg:text-center"
-            >
-              <span className="font-serif text-2xl lg:text-3xl font-bold tracking-[0.08em] uppercase">
-                TIKIZIKI
-              </span>
-            </Link>
-
-            {/* Right — actions */}
-            <div className="flex items-center gap-1 lg:gap-3 flex-1 justify-end">
-              {/* Search — desktop only placeholder */}
-              <button className="hidden lg:flex p-2 hover:bg-muted rounded-sm transition-colors">
-                <Search className="h-4 w-4" />
-                <span className="sr-only">Search</span>
-              </button>
-
-              {/* Account */}
-              {user ? (
-                <Link href="/account" className="hidden lg:flex p-2 hover:bg-muted rounded-sm transition-colors">
-                  <User className="h-4 w-4" />
-                  <span className="sr-only">Account</span>
-                </Link>
-              ) : (
-                <Link
-                  href="/auth/login"
-                  className="hidden lg:block text-xs tracking-[0.1em] uppercase font-medium px-4 py-2 hover:bg-muted rounded-sm transition-colors"
-                >
-                  Login
-                </Link>
-              )}
-
-              {/* Cart */}
-              <Link
-                href="/store/cart"
-                className="relative flex items-center gap-2 p-2 hover:bg-muted rounded-sm transition-colors"
-              >
-                <ShoppingBag className="h-4 w-4" />
-                {cartCount > 0 && (
-                  <span className="absolute -top-0.5 -right-0.5 h-4 w-4 rounded-full bg-foreground text-background text-[10px] flex items-center justify-center font-bold">
-                    {cartCount}
-                  </span>
-                )}
-                <span className="hidden lg:block text-xs tracking-[0.1em] uppercase font-medium">
-                  Bag {cartCount > 0 && `(${cartCount})`}
-                </span>
-                <span className="sr-only">Cart</span>
-              </Link>
-
-              {/* Mobile hamburger */}
-              <button
-                className="lg:hidden p-2 hover:bg-muted rounded-sm transition-colors"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              >
-                {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-              </button>
-            </div>
-          </div>
+        {/* Category pill — top left */}
+        <div className="absolute top-3 left-3">
+          <span className="inline-flex items-center gap-1 bg-background/90 backdrop-blur-sm text-foreground text-[10px] tracking-[0.15em] uppercase font-semibold px-2.5 py-1">
+            {product.category === 'Music' ? (
+              <Music className="h-2.5 w-2.5" />
+            ) : (
+              <ShoppingBag className="h-2.5 w-2.5" />
+            )}
+            {product.category}
+          </span>
         </div>
 
-        {/* Mobile menu */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-border bg-background">
-            <nav className="max-w-[1400px] mx-auto px-6 py-6 flex flex-col gap-6">
-              {[
-                { href: '/store', label: 'New Drops' },
-                { href: '/store?category=Music', label: 'Music' },
-                { href: '/store?category=Merch', label: 'Merch' },
-              ].map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-2xl font-serif font-bold tracking-tight hover:text-muted-foreground transition-colors"
-                >
-                  {label}
-                </Link>
-              ))}
-              <div className="border-t border-border pt-6">
-                {user ? (
-                  <Link
-                    href="/account"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="text-sm tracking-[0.1em] uppercase font-medium flex items-center gap-2"
-                  >
-                    <User className="h-4 w-4" /> My Account
-                  </Link>
-                ) : (
-                  <Link
-                    href="/auth/login"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="text-sm tracking-[0.1em] uppercase font-medium"
-                  >
-                    Login / Sign Up
-                  </Link>
-                )}
-              </div>
-            </nav>
+        {/* Digital badge — top right */}
+        {product.type === 'digital' && (
+          <div className="absolute top-3 right-3">
+            <span className="bg-foreground text-background text-[10px] tracking-[0.15em] uppercase font-semibold px-2.5 py-1">
+              Digital
+            </span>
           </div>
         )}
-      </header>
-    </>
+
+        {/* Quick-shop overlay on hover */}
+        <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
+          <div className="bg-foreground text-background text-center py-3 text-xs tracking-[0.2em] uppercase font-semibold">
+            View Product
+          </div>
+        </div>
+      </div>
+
+      {/* Text info */}
+      <div className="space-y-1">
+        <h3 className="font-serif text-base font-semibold leading-snug text-foreground group-hover:text-muted-foreground transition-colors line-clamp-2">
+          {product.name}
+        </h3>
+
+        <div className="flex items-center justify-between">
+          <span className="text-sm font-medium text-foreground">
+            {formatPrice(product.price)}
+          </span>
+          {product.sizes && (
+            <span className="text-xs text-muted-foreground tracking-wider uppercase">
+              {product.sizes.join(' · ')}
+            </span>
+          )}
+        </div>
+      </div>
+    </Link>
   );
 }
