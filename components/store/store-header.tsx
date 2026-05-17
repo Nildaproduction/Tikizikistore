@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ShoppingBag, Search, User, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useCart } from '@/context/cart-context';
@@ -69,14 +70,20 @@ export function StoreHeader() {
               </Link>
             </nav>
 
-            {/* Centre — wordmark */}
+            {/* Centre — Model image logo */}
             <Link
               href="/store"
-              className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:flex-1 lg:text-center"
+              className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:flex-1 lg:flex lg:justify-center"
             >
-              <span className="font-serif text-2xl lg:text-3xl font-bold tracking-[0.08em] uppercase">
-                TIKIZIKI
-              </span>
+              <div className="relative h-12 lg:h-14 w-32 lg:w-40">
+                <Image
+                  src="/images/Tiki ziki Model.png"
+                  alt="TIKIZIKI"
+                  fill
+                  className="object-contain object-center"
+                  priority
+                />
+              </div>
             </Link>
 
             {/* Right — actions */}
