@@ -3,124 +3,309 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ─────────────────────────────────────────────
+   TIKIZIKI STORE — Light mode
+   Warm paper / ink / gold — like a vinyl sleeve
+───────────────────────────────────────────── */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Core surfaces */
+  --background:          oklch(0.97 0.012 85);    /* warm off-white, like aged paper */
+  --foreground:          oklch(0.12 0.01 60);      /* near-black ink */
+
+  /* Cards & popovers */
+  --card:                oklch(0.99 0.008 80);
+  --card-foreground:     oklch(0.12 0.01 60);
+  --popover:             oklch(0.99 0.008 80);
+  --popover-foreground:  oklch(0.12 0.01 60);
+
+  /* Primary — deep stage black */
+  --primary:             oklch(0.13 0.01 60);
+  --primary-foreground:  oklch(0.97 0.012 85);
+
+  /* Secondary — warm parchment */
+  --secondary:           oklch(0.92 0.02 80);
+  --secondary-foreground:oklch(0.2 0.015 65);
+
+  /* Muted */
+  --muted:               oklch(0.93 0.015 80);
+  --muted-foreground:    oklch(0.48 0.02 70);
+
+  /* Accent — stage gold */
+  --accent:              oklch(0.72 0.13 75);      /* warm gold */
+  --accent-foreground:   oklch(0.10 0.01 60);
+
+  /* Destructive — sold out / alert red */
+  --destructive:         oklch(0.52 0.22 28);
+  --destructive-foreground: oklch(0.97 0.012 85);
+
+  /* Borders & inputs */
+  --border:              oklch(0.85 0.02 75);
+  --input:               oklch(0.88 0.018 78);
+  --ring:                oklch(0.72 0.13 75);      /* gold focus ring */
+
+  /* Border radius */
+  --radius: 0.5rem;
+
+  /* Charts — warm vinyl palette */
+  --chart-1: oklch(0.72 0.13 75);    /* gold */
+  --chart-2: oklch(0.55 0.18 28);    /* rust */
+  --chart-3: oklch(0.42 0.10 240);   /* slate */
+  --chart-4: oklch(0.65 0.15 140);   /* sage */
+  --chart-5: oklch(0.60 0.20 320);   /* plum */
+
+  /* Sidebar */
+  --sidebar:                oklch(0.93 0.018 82);
+  --sidebar-foreground:     oklch(0.12 0.01 60);
+  --sidebar-primary:        oklch(0.13 0.01 60);
+  --sidebar-primary-foreground: oklch(0.97 0.012 85);
+  --sidebar-accent:         oklch(0.72 0.13 75);
+  --sidebar-accent-foreground: oklch(0.10 0.01 60);
+  --sidebar-border:         oklch(0.85 0.02 75);
+  --sidebar-ring:           oklch(0.72 0.13 75);
+
+  /* ── TIKIZIKI custom tokens ── */
+  --gold:         oklch(0.72 0.13 75);
+  --gold-light:   oklch(0.84 0.10 80);
+  --gold-dark:    oklch(0.52 0.14 72);
+  --stage-black:  oklch(0.10 0.008 60);
+  --vinyl:        oklch(0.15 0.005 60);
+  --drop-red:     oklch(0.52 0.22 28);
+  --paper:        oklch(0.97 0.012 85);
+  --ink:          oklch(0.12 0.01 60);
 }
 
+/* ─────────────────────────────────────────────
+   TIKIZIKI STORE — Dark mode
+   Stage lights on black — the gig experience
+───────────────────────────────────────────── */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background:          oklch(0.10 0.008 60);     /* deep stage black */
+  --foreground:          oklch(0.94 0.01 85);      /* warm white */
+
+  --card:                oklch(0.14 0.008 65);
+  --card-foreground:     oklch(0.94 0.01 85);
+  --popover:             oklch(0.14 0.008 65);
+  --popover-foreground:  oklch(0.94 0.01 85);
+
+  /* Primary — gold on dark */
+  --primary:             oklch(0.72 0.13 75);
+  --primary-foreground:  oklch(0.10 0.008 60);
+
+  --secondary:           oklch(0.20 0.008 65);
+  --secondary-foreground:oklch(0.90 0.01 80);
+
+  --muted:               oklch(0.20 0.008 65);
+  --muted-foreground:    oklch(0.58 0.02 75);
+
+  --accent:              oklch(0.72 0.13 75);
+  --accent-foreground:   oklch(0.10 0.008 60);
+
+  --destructive:         oklch(0.45 0.20 28);
+  --destructive-foreground: oklch(0.88 0.05 30);
+
+  --border:              oklch(0.24 0.008 65);
+  --input:               oklch(0.22 0.008 65);
+  --ring:                oklch(0.72 0.13 75);
+
+  --chart-1: oklch(0.72 0.13 75);
+  --chart-2: oklch(0.62 0.20 28);
+  --chart-3: oklch(0.55 0.14 240);
+  --chart-4: oklch(0.60 0.16 140);
+  --chart-5: oklch(0.58 0.22 320);
+
+  --sidebar:                oklch(0.13 0.008 62);
+  --sidebar-foreground:     oklch(0.94 0.01 85);
+  --sidebar-primary:        oklch(0.72 0.13 75);
+  --sidebar-primary-foreground: oklch(0.10 0.008 60);
+  --sidebar-accent:         oklch(0.20 0.008 65);
+  --sidebar-accent-foreground: oklch(0.94 0.01 85);
+  --sidebar-border:         oklch(0.24 0.008 65);
+  --sidebar-ring:           oklch(0.72 0.13 75);
 }
 
+/* ─────────────────────────────────────────────
+   THEME MAPPING
+───────────────────────────────────────────── */
 @theme inline {
-  --font-sans: var(--font-poppins), 'Poppins', sans-serif;
+  --font-sans:  var(--font-poppins), 'Poppins', sans-serif;
   --font-serif: var(--font-playfair), 'Playfair Display', serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
+  --font-mono:  'Geist Mono', monospace;
+
+  --color-background:             var(--background);
+  --color-foreground:             var(--foreground);
+  --color-card:                   var(--card);
+  --color-card-foreground:        var(--card-foreground);
+  --color-popover:                var(--popover);
+  --color-popover-foreground:     var(--popover-foreground);
+  --color-primary:                var(--primary);
+  --color-primary-foreground:     var(--primary-foreground);
+  --color-secondary:              var(--secondary);
+  --color-secondary-foreground:   var(--secondary-foreground);
+  --color-muted:                  var(--muted);
+  --color-muted-foreground:       var(--muted-foreground);
+  --color-accent:                 var(--accent);
+  --color-accent-foreground:      var(--accent-foreground);
+  --color-destructive:            var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
+  --color-border:                 var(--border);
+  --color-input:                  var(--input);
+  --color-ring:                   var(--ring);
+  --color-chart-1:                var(--chart-1);
+  --color-chart-2:                var(--chart-2);
+  --color-chart-3:                var(--chart-3);
+  --color-chart-4:                var(--chart-4);
+  --color-chart-5:                var(--chart-5);
+  --radius-sm:  calc(var(--radius) - 4px);
+  --radius-md:  calc(var(--radius) - 2px);
+  --radius-lg:  var(--radius);
+  --radius-xl:  calc(var(--radius) + 4px);
+  --color-sidebar:                    var(--sidebar);
+  --color-sidebar-foreground:         var(--sidebar-foreground);
+  --color-sidebar-primary:            var(--sidebar-primary);
   --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-accent:             var(--sidebar-accent);
+  --color-sidebar-accent-foreground:  var(--sidebar-accent-foreground);
+  --color-sidebar-border:             var(--sidebar-border);
+  --color-sidebar-ring:               var(--sidebar-ring);
+
+  /* Expose brand tokens to Tailwind */
+  --color-gold:        var(--gold);
+  --color-gold-light:  var(--gold-light);
+  --color-gold-dark:   var(--gold-dark);
+  --color-stage-black: var(--stage-black);
+  --color-vinyl:       var(--vinyl);
+  --color-drop-red:    var(--drop-red);
+  --color-paper:       var(--paper);
+  --color-ink:         var(--ink);
 }
 
+/* ─────────────────────────────────────────────
+   BASE
+───────────────────────────────────────────── */
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Selection highlight — gold brand colour */
+  ::selection {
+    background-color: var(--gold);
+    color: var(--stage-black);
+  }
+}
+
+/* ─────────────────────────────────────────────
+   TIKIZIKI UTILITIES
+   Use these Tailwind-style: class="vinyl-spin"
+───────────────────────────────────────────── */
+@layer utilities {
+
+  /* Subtle grain texture overlay — add to hero sections */
+  .grain {
+    position: relative;
+  }
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    border-radius: inherit;
+    opacity: 0.35;
+    mix-blend-mode: overlay;
+    z-index: 1;
+  }
+
+  /* Gold shimmer — use on price tags or featured badges */
+  .gold-shimmer {
+    background: linear-gradient(
+      105deg,
+      var(--gold-dark) 0%,
+      var(--gold) 40%,
+      var(--gold-light) 55%,
+      var(--gold) 70%,
+      var(--gold-dark) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+  }
+
+  @keyframes shimmer {
+    to { background-position: 200% center; }
+  }
+
+  /* Vinyl record spin — use on album art thumbnails */
+  .vinyl-spin {
+    border-radius: 9999px;
+    animation: spin 4s linear infinite;
+    animation-play-state: paused; /* resume on hover or .playing */
+  }
+  .vinyl-spin:hover,
+  .vinyl-spin.playing {
+    animation-play-state: running;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* Limited drop badge — pulsing red dot */
+  .drop-pulse::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background-color: var(--drop-red);
+    margin-right: 0.4rem;
+    animation: pulse-dot 1.4s ease-in-out infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.5; transform: scale(0.75); }
+  }
+
+  /* Track duration / edition numbers — monospace stamp feel */
+  .mono-stamp {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+
+  /* Sold-out overlay */
+  .sold-out {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  .sold-out::after {
+    content: 'SOLD OUT';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--drop-red);
+    background: oklch(0.10 0.008 60 / 0.6);
+    border-radius: inherit;
   }
 }
