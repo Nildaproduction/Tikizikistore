@@ -52,14 +52,14 @@ export const products: Product[] = [
   },
   {
     id: '6',
-    name: 'Tiki Ziki Hoodie',
+    name: 'Gold State',
     description: "Stay warm in style with this premium Tiki Ziki hoodie. Features a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
-    price: 3500,
+    price: 4500,
     category: 'Merch',
     type: 'physical',
-    image: '/images/hoodie.jpg',
+    image: '/images/hoodie-anthracite.jpg',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    colors: ['Black', 'Gray'],
+    colors: ['Anthracite'],
   },
 ];
 
