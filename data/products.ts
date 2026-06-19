@@ -52,8 +52,8 @@ export const products: Product[] = [
   },
   {
     id: '6',
-    name: 'Gold State',
-    description: "Stay warm in style with this premium Tiki Ziki hoodie. Features a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
+    name: 'Gold Man - Anthracite Hoodie',
+    description: "Stay warm in style with this premium Gold Man Hoodie. Features a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
     price: 4500,
     category: 'Merch',
     type: 'physical',
