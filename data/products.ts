@@ -68,7 +68,7 @@ export const products: Product[] = [
     price: 4500,
     category: 'Merch',
     type: 'physical',
-    image: '/images/hoodie-Heather Grey.png',
+    image: '/images/hoodie-heather grey.png',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['heather grey'],
   },
