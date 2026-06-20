@@ -57,7 +57,7 @@ export const products: Product[] = [
     price: 4500,
     category: 'Merch',
     type: 'physical',
-    edition: 'New Arrival',
+    edition:'New Arrival',
     image: '/images/hoodie-anthracite.png',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Anthracite'],
