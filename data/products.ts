@@ -5,7 +5,7 @@ export const products: Product[] = [
   {
     id: '4',
     name: 'Gold Man - Walnut Beanie',
-    description: "Premium Gold Man beanie in walnut colour featuring embroidered "Gold Man" branding.",
+    description: "Premium Gold Man beanie in walnut colour featuring embroidered Gold Man branding.",
     price: 1500,
     category: 'Merch',
     type: 'physical',
@@ -16,7 +16,7 @@ export const products: Product[] = [
   {
     id: '5',
     name: 'Gold Man - Black Beanie',
-    description: "Premium Gold Man beanie in black colour featuring embroidered "Gold Man" branding.",
+    description: "Premium Gold Man beanie in black colour featuring embroidered Gold Man branding.",
     price: 1500,
     category: 'Merch',
     type: 'physical',
@@ -27,7 +27,7 @@ export const products: Product[] = [
   {
     id: '13',
     name: 'Gold Man - Red Beanie',
-    description: "Premium Gold Man beanie in red colour featuring embroidered "Gold Man" branding.",
+    description: "Premium Gold Man beanie in red colour featuring embroidered Gold Man branding.",
     price: 1500,
     category: 'Merch',
     type: 'physical',
@@ -38,7 +38,7 @@ export const products: Product[] = [
   {
     id: '5',
     name: 'Gold Man - Cypress Beanie',
-    description: "Premium Gold Man beanie in Cypress colour featuring embroidered "Gold Man" branding.",
+    description: "Premium Gold Man beanie in Cypress colour featuring embroidered Gold Man branding.",
     price: 1500,
     category: 'Merch',
     type: 'physical',
@@ -49,7 +49,7 @@ export const products: Product[] = [
   {
     id: '6',
     name: 'Gold Man - Anthracite Hoodie',
-    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered "Gold Man" branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
+    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered Gold Man branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
     price: 4500,
     category: 'Merch',
     type: 'physical',
@@ -61,7 +61,7 @@ export const products: Product[] = [
    {
     id: '7',
     name: 'Gold Man - Heather Grey Hoodie',
-    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered "Gold Man" branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
+    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered Gold Man branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
     price: 4500,
     category: 'Merch',
     edition: 'New Arrival',
@@ -73,7 +73,7 @@ export const products: Product[] = [
    {
     id: '8',
     name: 'Gold Man - French Navy Hoodie',
-    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered "Gold Man" branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
+    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered Gold Man branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
     price: 4500,
     category: 'Merch',
     edition: 'New Arrival',
@@ -85,7 +85,7 @@ export const products: Product[] = [
    {
     id: '9',
     name: 'Gold Man - Desert Dust Hoodie',
-    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered "Gold Man" branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
+    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered Gold Man branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
     price: 4500,
     category: 'Merch',
     edition: 'New Arrival',
@@ -97,7 +97,7 @@ export const products: Product[] = [
   {
     id: '14',
     name: 'Gold Man -  Ecru Beanie',
-    description: "Premium Gold Man beanie in Ecru colour featuring embroidered "Gold Man" branding.",
+    description: "Premium Gold Man beanie in Ecru colour featuring embroidered Gold Man branding.",
     price: 1500,
     category: 'Merch',
     type: 'physical',
@@ -108,7 +108,7 @@ export const products: Product[] = [
    {
     id: '10',
     name: 'Gold Man - Dark Heather Grey Hoodie',
-    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered "Gold Man" branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
+    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered Gold Man branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
     price: 4500,
     category: 'Merch',
     edition: 'New Arrival',
@@ -120,7 +120,7 @@ export const products: Product[] = [
  {
   id: '15',
   name: 'Gold Man - Stargazer T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -133,7 +133,7 @@ export const products: Product[] = [
 {
   id: '16',
   name: 'Gold Man - Red T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -146,7 +146,7 @@ export const products: Product[] = [
 {
   id: '17',
   name: 'Gold Man - Lavender T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -159,7 +159,7 @@ export const products: Product[] = [
 {
   id: '18',
   name: 'Gold Man - Khaki T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -172,7 +172,7 @@ export const products: Product[] = [
 {
   id: '19',
   name: 'Gold Man - Heather Grey T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -185,7 +185,7 @@ export const products: Product[] = [
    {
     id: '11',
     name: 'Gold Man - Black Hoodie',
-    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered "Gold Man" branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
+    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered Gold Man branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
     price: 4500,
     category: 'Merch',
     edition: 'New Arrival',
@@ -197,7 +197,7 @@ export const products: Product[] = [
    {
     id: '12',
     name: 'Gold Man - White Hoodie',
-    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered "Gold Man" branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
+    description: "Stay warm in style with this premium Gold Man Hoodie. Featuring embroidered Gold Man branding, a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
     price: 4500,
     category: 'Merch',
     edition: 'New Arrival',
@@ -209,7 +209,7 @@ export const products: Product[] = [
  {
   id: '20',
   name: 'Gold Man - French Navy T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -222,7 +222,7 @@ export const products: Product[] = [
 {
   id: '21',
   name: 'Gold Man - Fraiche Peche T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -235,7 +235,7 @@ export const products: Product[] = [
 {
   id: '22',
   name: 'Gold Man - Desert Dust T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -248,7 +248,7 @@ export const products: Product[] = [
 {
   id: '23',
   name: 'Gold Man - Dark Heather Grey T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -261,7 +261,7 @@ export const products: Product[] = [
 {
   id: '24',
   name: 'Gold Man - Dark Heather Blue T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -274,7 +274,7 @@ export const products: Product[] = [
 {
   id: '25',
   name: 'Gold Man - Cotton Pink T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -287,7 +287,7 @@ export const products: Product[] = [
 {
   id: '26',
   name: 'Gold Man - Burgundy T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -300,7 +300,7 @@ export const products: Product[] = [
 {
   id: '27',
   name: 'Gold Man - Black T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
@@ -313,7 +313,7 @@ export const products: Product[] = [
 {
   id: '28',
   name: 'Gold Man - Anthracite T-Shirt',
-  description: 'Premium Gold Man t-shirt featuring embroidered "Gold Man" branding. Made from soft, comfortable cotton for everyday wear.',
+  description: 'Premium Gold Man t-shirt featuring embroidered Gold Man branding. Made from soft, comfortable cotton for everyday wear.',
   price: 2000,
   category: 'Merch',
   type: 'physical',
