@@ -1,18 +1,22 @@
 export type ProductCategory = 'Music' | 'Merch';
 export type ProductType = 'digital' | 'physical';
+export type ProductEdition = 'New Arrival' | 'Regular';
 
 export interface Product {
   id: string;
   name: string;
   description: string;
-  price: number;
+  price: number; // Price in KSh
   category: ProductCategory;
   type: ProductType;
   image: string;
-  sizes?: string[];
-  colors?: string[];
 
-  createdAt: string; // NEW
+  sizes?: string[]; // For merchandise
+  colors?: string[]; // For merchandise
+
+  stock: number; // Available stock quantity
+
+  edition?: ProductEdition; // New Arrival tag
 }
 
 export interface CartItem {
