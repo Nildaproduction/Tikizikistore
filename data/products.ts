@@ -36,7 +36,7 @@ export const products: Product[] = [
     category: 'Merch',
     type: 'physical',
     image: '/images/Fisherman beanie/beanie-walnut-front.png',
-    sizes: One size,
+    sizes: 'One size',
     colors: ['walnut'],
   },
   {
