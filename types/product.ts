@@ -5,12 +5,14 @@ export interface Product {
   id: string;
   name: string;
   description: string;
-  price: number; // Price in KSh
+  price: number;
   category: ProductCategory;
   type: ProductType;
   image: string;
-  sizes?: string[]; // For merchandise
-  colors?: string[]; // For merchandise
+  sizes?: string[];
+  colors?: string[];
+
+  createdAt: string; // NEW
 }
 
 export interface CartItem {
