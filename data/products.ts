@@ -31,7 +31,7 @@ export const products: Product[] = [
   {
     id: '4',
     name: 'Gold Man Beanie - Walnut',
-    description: "Premium Gold Man beanie in walnut color.",
+    description: "Premium Gold Man beanie in walnut colour.",
     price: 1500,
     category: 'Merch',
     type: 'physical',
@@ -42,17 +42,13 @@ export const products: Product[] = [
   {
     id: '5',
     name: 'Gold Man - Black',
-    description: "Classic white t-shirt with the Tiki Ziki signature print. Soft, breathable fabric perfect for any occasion.",
+    description: "Premium Gold Man beanie in black colour",
     price: 1500,
     category: 'Merch',
     type: 'physical',
     image: '/images/Fisherman beanie/beanie-black-front.png',
-    gallery:[
-      '/images/Fisherman beanie/beanie-black-front.png',
-      '/images/Fisherman beanie/beanie-black-front-raised.png',
-      '/images/Fisherman beanie/beanie-black-right-front.png,],
     sizes: ['One size'],
-    colors: ['black'],
+    colors: ['Black'],
   },
   {
     id: '6',
@@ -137,6 +133,17 @@ export const products: Product[] = [
     image: '/images/hoodie white.png',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['White'],
+  },
+   {
+    id: '5',
+    name: 'Gold Man - Red',
+    description: "Premium Gold Man beanie in red colour",
+    price: 1500,
+    category: 'Merch',
+    type: 'physical',
+    image: '/images/Fisherman beanie/beanie-red-front.png',
+    sizes: ['One size'],
+    colors: ['Red'],
   },
 ];
 
