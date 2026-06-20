@@ -30,13 +30,13 @@ export const products: Product[] = [
   },
   {
     id: '4',
-    name: 'Fisherman Beanie - Walnut',
+    name: 'Gold Man Beanie - Walnut',
     description: "Premium fisherman beanie in walnut color.",
     price: 1500,
     category: 'Merch',
     type: 'physical',
     image: '/images/Fisherman beanie/beanie-walnut-front.png',
-    sizes: 'One size',
+    sizes: ['One Size'],
     colors: ['walnut'],
   },
   {
