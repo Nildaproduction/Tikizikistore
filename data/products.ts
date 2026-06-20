@@ -55,7 +55,7 @@ export const products: Product[] = [
     name: 'Gold Man - Anthracite Hoodie',
     description: "Stay warm in style with this premium Gold Man Hoodie. Features a front pocket, adjustable hood, and soft fleece lining. Perfect for cooler days.",
     price: 4500,
-    category: 'Merch','New Arrival',
+    category: 'Merch''New Arrival',
     type: 'physical',
     image: '/images/hoodie-anthracite.png',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
