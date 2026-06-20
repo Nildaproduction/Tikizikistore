@@ -82,7 +82,7 @@ export const products: Product[] = [
     category: 'Merch',
     edition: 'New Arrival',
     type: 'physical',
-    image: '/images/hoodie-french navy.png',
+    image: '/images/hoodie-french-navy.png',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['French Navy'],
   },
