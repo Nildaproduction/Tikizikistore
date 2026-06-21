@@ -343,7 +343,8 @@ export const products: Product[] = [
     price: 200,
     category: 'Music',
     type: 'digital',
-    image: '/images/lets-lose.jpg',
+    image: '/music/ufukwe cover.png',
+     downloadFile: '/music/Tiki ziki-UFUKWE.mp3',
   },
   {
     id: '2',
