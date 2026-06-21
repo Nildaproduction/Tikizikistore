@@ -340,7 +340,7 @@ export const products: Product[] = [
     id: '1',
     name: "Tiki ziki – UFUKWE",
     description: "An energetic track that captures the essence of letting go and embracing the moment. High-quality MP3 download with instant delivery to your email.",
-    price: 0,
+    price: 1000,
     category: 'Music',
     type: 'digital',
     image: '/Music/ufukwe cover.png',
