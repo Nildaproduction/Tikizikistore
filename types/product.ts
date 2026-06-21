@@ -8,16 +8,21 @@ export interface Product {
   description: string;
   price: number; // Price in KSh
   category: ProductCategory;
-  edition: string;
   type: ProductType;
   image: string;
 
-  sizes?: string[]; // For merchandise
-  colors?: string[]; // For merchandise
+  // For digital products
+  downloadFile?: string;
 
-  stock: number; // Available stock quantity
+  // For merchandise
+  sizes?: string[];
+  colors?: string[];
 
-  edition?: ProductEdition; // New Arrival tag
+  // Inventory
+  stock: number;
+
+  // Product label
+  edition?: ProductEdition;
 }
 
 export interface CartItem {
