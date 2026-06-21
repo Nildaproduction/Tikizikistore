@@ -343,8 +343,8 @@ export const products: Product[] = [
     price: 0,
     category: 'Music',
     type: 'digital',
-    image: '/music/ufukwe cover.png',
-     downloadFile: '/music/Tiki ziki-UFUKWE.mp3',
+    image: '/Music/ufukwe cover.png',
+    downloadFile: '/Music/Tiki ziki-UFUKWE.mp3',
   },
   {
     id: '2',
