@@ -8,7 +8,7 @@ export interface Product {
   description: string;
   price: number; // Price in KSh
   category: ProductCategory;
-  edition: ProductEdition;
+  edition: string;
   type: ProductType;
   image: string;
 
